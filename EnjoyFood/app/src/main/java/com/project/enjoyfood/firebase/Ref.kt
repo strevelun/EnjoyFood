@@ -10,6 +10,5 @@ class Ref {
         private val database = Firebase.database
 
         val boardRef = database.getReference("board")
-        val restaurantRef = database.getReference("restaurant")
     }
 }

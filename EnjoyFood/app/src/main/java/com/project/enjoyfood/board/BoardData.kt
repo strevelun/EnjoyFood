@@ -5,5 +5,4 @@ data class BoardData (
     val content : String = "",
     val uid : String = "",
     val time : String = ""
-
     )
