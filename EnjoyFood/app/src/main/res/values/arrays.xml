@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="locations">
+        <item>현재위치</item>
+        <item>임당동</item>
+        <item>조영동</item>
+
+    </string-array>
+</resources>

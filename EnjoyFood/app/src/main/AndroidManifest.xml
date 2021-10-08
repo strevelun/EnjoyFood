@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EnjoyFood">
+        <activity
+            android:name=".map.DetailedInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".map.MapActivity"
+            android:exported="true" />
         <activity
             android:name=".board.BoardEditActivity"
             android:exported="true" />
@@ -42,6 +50,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map" />
     </application>
 
 </manifest>
